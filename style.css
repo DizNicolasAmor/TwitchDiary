@@ -1,0 +1,65 @@
+/*
+TwitchDiary
+- - - - - - - - - -
+http://codepen.io/DizNicolasAmor/pen/wgQjPq
+Author:  Diz, Nicolás Amor (https://github.com/DizNicolasAmor)
+This project is a challenge posed by FreeCodeCamp.
+Use the Twitch.tv API
+*/
+
+h1,h2,h3,h4 {
+  font-family: Arial;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+/* classes */
+
+.container {
+  border-radius: 5%;
+  width: 80vw;
+  max-width: 45em;
+  padding: 1.5em;
+  margin: 5% auto;
+  background: rgba(225, 225, 225, .75);
+  box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
+}
+
+.subcontainer {
+  border-radius: 5%;
+  background: rgba(200, 200, 200, .75);
+}
+
+.buttons{
+  font-family: 'Arial';
+  font-size: 1.0em;
+  font-weight: 100;
+  text-align: center;
+  width: 100px;
+  height: 50px;
+  border-radius: 10%;
+}
+
+/* buttons color*/
+
+#all{
+  background: rgba(250, 250, 250, .75);
+  border-radius: 5%;
+}
+#online{
+  background: rgba(250, 250, 250, .75);
+  border-radius: 5%;
+
+}
+
+#offline{
+  background: rgba(250, 250, 250, .75);
+  border-radius: 5%;
+}
+
+#all.active,
+#offline.active,
+#online.active {
+  background: rgba(200, 200, 200, .75);
+}
