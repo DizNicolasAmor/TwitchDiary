@@ -1,7 +1,7 @@
 /*
 TwitchDiary
 - - - - - - - - - -
-http://codepen.io/DizNicolasAmor/pen/wgQjPq
+https://diznicolasamor.github.io/TwitchDiary/
 Author:  Diz, Nicolás Amor (https://github.com/DizNicolasAmor)
 This project is a challenge posed by FreeCodeCamp.
 Use the Twitch.tv API
@@ -34,7 +34,7 @@ $(document).ready(function() {
 //        console.log(data);
         
         if(data.stream !==null){
-          $('#online?FCC').html('ONLINE');
+          $('#onlineFCC').html('ONLINE');
           FCConline = true;
         }
       }  
@@ -73,7 +73,7 @@ $(document).ready(function() {
         
       if(data3.stream !==null){
         storbeckonline = true; 
-        $('#online?storbeck').html('ONLINE');
+        $('#onlinestorbeck').html('ONLINE');
       }
     }  
   });  //ajax
@@ -111,7 +111,7 @@ $(document).ready(function() {
     
       if(data5.stream !==null){
         loserfruitonline = true; 
-        $('#online?loserfruit').html('ONLINE');
+        $('#onlineloserfruit').html('ONLINE');
       }
     }  
   });  //ajax
@@ -148,10 +148,10 @@ $(document).ready(function() {
       if(data7.stream !==null){
         fakenameonline = true; 
 
-        $('#online?fakename').html('ONLINE');  
+        $('#onlinefakename').html('ONLINE');  
       }
       else if (data7.stream === undefined) {
-        $('#online?fakename').html('Account Closed');
+        $('#onlinefakename').html('Account Closed');
         $('#statusFakename').html('No status');
       }
 
@@ -169,17 +169,17 @@ $(document).ready(function() {
       
       if (dataError.status === 422) {
         $('#logoFakename').html('<img class="img-circle center-block" width="50" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Icon_Simple_Error.png">');
-        $('#online?fakename').html('account closed');
+        $('#onlinefakename').html('account closed');
         $('#statusFakename').html('No status');
       }
       else if (dataError.status === 404) {
         $('#logoFakename').html('<img class="img-circle center-block" width="50" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Icon_Simple_Error.png">');
-        $('#online?fakename').html('non-existant account');
+        $('#onlinefakename').html('non-existant account');
         $('#statusFakename').html('No status');
       }
       else{
         $('#logoFakename').html('<img class="img-circle center-block" width="50" src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Icon_Simple_Error.png">');
-        $('#online?fakename').html('ERROR');
+        $('#onlinefakename').html('ERROR');
         $('#statusFakename').html('No status');
       }
 
