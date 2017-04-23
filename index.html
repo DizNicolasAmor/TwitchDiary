@@ -1,16 +1,18 @@
 <!--
 TwitchDiary
 - - - - - - - - - -
-http://codepen.io/DizNicolasAmor/pen/wgQjPq
+https://diznicolasamor.github.io/TwitchDiary/
 Author:  Diz, Nicolás Amor (https://github.com/DizNicolasAmor)
 This project is a challenge posed by FreeCodeCamp.
 Use the Twitch.tv API
 -->
 
-<!doctype HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>TwitchDiary</title>
+
+    <meta name="viewport" content="height=device-height, initial-scale=1.0, user-scalable=no">
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -48,7 +50,7 @@ Use the Twitch.tv API
           <h4 class="col-xs-4" id="nameFCC">
             <a href="https://twitch.tv/freecodecamp" target="_blank">Free Code Camp</a>
           </h4>
-          <h4 class="col-xs-4" id="online?FCC">OFFLINE</h4>
+          <h4 class="col-xs-4" id="onlineFCC">OFFLINE</h4>
         </div>
         <h4 id="statusFCC">Loading status... <h4>
       </div>
@@ -60,10 +62,9 @@ Use the Twitch.tv API
           <h4 class="col-xs-4">
             <a href="https://twitch.tv/storbeck" target="_blank">Storbeck</a>
           </h4>
-          <h4 class="col-xs-4" id="online?storbeck">OFFLINE</h4>
+          <h4 class="col-xs-4" id="onlinestorbeck">OFFLINE</h4>
         </div>
         <h4 id="statusStorbeck">Loading status... <h4>
-      </div>
 
       <!-- loserfruit -->
       <div class="subcontainer" id="loserfruit">
@@ -72,7 +73,7 @@ Use the Twitch.tv API
           <h4 class="col-xs-4">
             <a href="https://twitch.tv/loserfruit" target="_blank">Loserfruit</a>
           </h4>
-          <h4 class="col-xs-4" id="online?loserfruit">OFFLINE</h4>
+          <h4 class="col-xs-4" id="onlineloserfruit">OFFLINE</h4>
         </div>
         <h4 id="statusLoserfruit">Loading status... <h4>
       </div>
@@ -84,14 +85,12 @@ Use the Twitch.tv API
           <h4 class="col-xs-4">
             <a href="https://twitch.tv/fakename" target="_blank">Fakename</a>
           </h4>
-          <h4 class="col-xs-4" id="online?fakename">OFFLINE</h4>
+          <h4 class="col-xs-4" id="onlinefakename">OFFLINE</h4>
         </div>
         <h4 id="statusFakename">Loading status... <h4>
       </div>
           
       </div>  <!--  container -->
-    
-      <footer class="text-center">Feb 2017 - Diz, Nicol&aacute;s Amor</footer>
 
     <!-- jQuery-->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
