@@ -1,7 +1,7 @@
 /*
 TwitchDiary
 - - - - - - - - - -
-http://codepen.io/DizNicolasAmor/pen/wgQjPq
+https://diznicolasamor.github.io/TwitchDiary/
 Author:  Diz, Nicolás Amor (https://github.com/DizNicolasAmor)
 This project is a challenge posed by FreeCodeCamp.
 Use the Twitch.tv API
@@ -22,8 +22,10 @@ h1,h2,h3,h4 {
   max-width: 45em;
   padding: 1.5em;
   margin: 5% auto;
-  background: rgba(225, 225, 225, .75);
   box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
+  background: #A1FFCE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .subcontainer {
